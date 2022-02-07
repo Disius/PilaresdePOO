@@ -1,13 +1,14 @@
 <?php
 
-class Store {
+class Store { 
     //Propiedades
 
     //Métodos
+    //ABSTRACCION
     public function __construct(
         private string $nombre,  
         private string $precio, 
-        private int $stock, 
+        private int $stock,                //ENCAPSULAMIENTO
         private int $id,
         private string $state,
         private string $destino){
@@ -45,11 +46,11 @@ class Store {
 
 echo "<h1>Almacen</h1> <br>";
 echo "<h2>POR SALIR</h2>";
-//instancia de la clase libro
+//instancia de la clase Store
 $tienda1 = new Store(
     'Freidora de aire',
     '$250.00',
-    5,
+    5,                      //ABSTRACCION
     1,
     'Salida',
     'Tuxtla Gutierrez Chiapas'

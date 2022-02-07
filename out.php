@@ -7,19 +7,19 @@ class Entrada extends Store{
     public function __construct(
         $nombre,  
         $precio, 
-        $stock, 
+        $stock,                                        
         $id,
         $state,
         $destino,
         public string $entrega 
     )
     {
-        parent::__construct($nombre, $precio, $stock, $id, $state,$destino);
+        parent::__construct($nombre, $precio, $stock, $id, $state,$destino); //HERENCIA
     }
 
     public function getInfo(){
         echo parent::getinfo();
-        $result = "Entrega: $this->entrega <br>";
+        $result = "Entrega: $this->entrega <br>";   //POLIMORFISMO
         return $result;
     }
 
@@ -56,3 +56,6 @@ echo "<br></br>";
 
 
 echo $boton = "<a href='logout.php'>Cerrar sesión</a>";
+
+echo "<br></b>";
+echo "DANIEL EDUARDO FERNÁNDEZ PÉREZ";
