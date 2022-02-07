@@ -1,0 +1,22 @@
+{
+    "name": "uxweb/sweet-alert",
+    "description": "instalaciondependencia",
+    "type": "project",
+    "require": {
+        "uxweb/sweet-alert": "2.0.5",
+        "dompdf/dompdf": "dev-master"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Uxweb\\SweetAlert\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Disius",
+            "email": "defp_99@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
